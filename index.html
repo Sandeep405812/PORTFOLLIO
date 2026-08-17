@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Singh | Full Stack MERN Developer Portfolio</title>
+    <meta name="description" content="Welcome to the portfolio of Sandeep Singh, a Computer Science student and Full Stack MERN Developer from Kanpur, UP. Explore projects, skills, and get in touch.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Background Gradients -->
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+    <div class="bg-grid-overlay"></div>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Sandeep<span class="logo-accent">.S /&gt;</span>
+            </a>
+
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Timeline</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Accent Selector -->
+                <div class="accent-selector">
+                    <button class="accent-btn active" data-accent="cyan" style="--color-accent: #00f0ff;" title="Neon Cyan"></button>
+                    <button class="accent-btn" data-accent="purple" style="--color-accent: #bd00ff;" title="Mystic Purple"></button>
+                    <button class="accent-btn" data-accent="emerald" style="--color-accent: #00ff66;" title="Emerald Green"></button>
+                </div>
+                
+                <!-- Hamburger Menu for Mobile -->
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container container">
+                <div class="hero-content scroll-reveal fade-left">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span> Open to Internship &amp; Full-time Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Sandeep Singh</span><br>
+                        I build <span class="typing-text" id="typing-text"></span>
+                    </h1>
+                    <p class="hero-desc">
+                        A passionate Full Stack MERN Developer &amp; CSE student at AKTU Kanpur. I craft high-performance web applications, RESTful APIs, and real-world ML systems with clean, optimized code.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#portfolio" class="btn btn-primary magnetic" id="view-work-btn">
+                            View Projects <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary magnetic">
+                            Let's Talk
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual scroll-reveal fade-right">
+                    <div class="glass-card-wrapper">
+                        <div class="glowing-border-animate"></div>
+                        <div class="glass-card hero-card">
+                            <div class="card-header">
+                                <span class="dot-btn red"></span>
+                                <span class="dot-btn yellow"></span>
+                                <span class="dot-btn green"></span>
+                            </div>
+                            <div class="avatar-container">
+                                <img src="assets/avatar.jpg" alt="Sandeep Singh Photo" class="avatar-img" id="avatar-img">
+                            </div>
+                            <div class="card-details">
+                                <h3>Sandeep Singh</h3>
+                                <p class="role">Full Stack Developer &amp; CSE Student</p>
+                                <div class="socials">
+                                    <a href="https://github.com/Sandeep405812" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/sandeep-singh-289a10325/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="mailto:sandeepsingh.tech27@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator" id="scroll-down">
+                <span class="mouse-icon">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About & Skills Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <h2 class="section-title scroll-reveal fade-up">About Me</h2>
+                
+                <div class="about-grid">
+                    <div class="about-info scroll-reveal fade-left">
+                        <p class="lead-text">
+                            Motivated CSE student &amp; developer who turns complex problems into elegant, scalable solutions.
+                        </p>
+                        <p class="body-text">
+                            I'm a Computer Science &amp; Engineering student at Dr. A.P.J. Abdul Kalam Technical University, Kanpur with a CGPA of 7.2. I have a strong foundation in Data Structures &amp; Algorithms, OOPs, DBMS, Operating Systems, and Computer Networks. Proficient in the MERN Stack, I love building full-stack applications and solving real-world engineering challenges — from hospital management platforms to autonomous car systems using Raspberry Pi &amp; Machine Learning.
+                        </p>
+                        <div class="stats-container">
+                            <div class="stat-box">
+                                <span class="stat-number">7.2</span>
+                                <span class="stat-label">CGPA (AKTU)</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Major Projects</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">6+</span>
+                                <span class="stat-label">Tech Skills</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-skills scroll-reveal fade-right">
+                        <h3>My Tech Stack</h3>
+                        <div class="skills-grid">
+                            <!-- Programming Languages -->
+                            <div class="skill-card" data-color="#00599c">
+                                <i class="fa-solid fa-c skill-icon" style="color:#00599c;"></i>
+                                <span>C++</span>
+                            </div>
+                            <div class="skill-card" data-color="#3572A5">
+                                <i class="fa-brands fa-python skill-icon"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-card" data-color="#f7df1e">
+                                <i class="fa-brands fa-js skill-icon"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <!-- Frontend -->
+                            <div class="skill-card" data-color="#e34f26">
+                                <i class="fa-brands fa-html5 skill-icon"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-card" data-color="#1572b6">
+                                <i class="fa-brands fa-css3-alt skill-icon"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-card" data-color="#61dafb">
+                                <i class="fa-brands fa-react skill-icon"></i>
+                                <span>React.js</span>
+                            </div>
+                            <!-- Backend -->
+                            <div class="skill-card" data-color="#339933">
+                                <i class="fa-brands fa-node-js skill-icon"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-card" data-color="#00d8a7">
+                                <i class="fa-solid fa-server skill-icon" style="color:#00d8a7;"></i>
+                                <span>Express.js</span>
+                            </div>
+                            <!-- Database -->
+                            <div class="skill-card" data-color="#4db33d">
+                                <i class="fa-solid fa-leaf skill-icon" style="color:#4db33d;"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-card" data-color="#00758f">
+                                <i class="fa-solid fa-database skill-icon" style="color:#00758f;"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <!-- Tools -->
+                            <div class="skill-card" data-color="#f05032">
+                                <i class="fa-brands fa-git-alt skill-icon"></i>
+                                <span>Git &amp; GitHub</span>
+                            </div>
+                            <div class="skill-card" data-color="#007acc">
+                                <i class="fa-solid fa-code skill-icon" style="color:#007acc;"></i>
+                                <span>VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section section">
+            <div class="container">
+                <h2 class="section-title scroll-reveal fade-up">My Projects</h2>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-container scroll-reveal fade-up">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="ai">AI / ML</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 - Hospital Management System -->
+                    <div class="project-card scroll-reveal fade-up" data-category="web" data-project-id="1">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project1.png" alt="Hospital Management System" class="project-img">
+                            <div class="project-overlay">
+                                <span class="view-details-btn">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Full Stack Web App</span>
+                            <h3 class="project-title">Hospital Management System</h3>
+                            <p class="project-summary">A full-stack MERN application for managing patient registration, doctor appointments, medical records, and billing with role-based access control.</p>
+                            <div class="project-tech">
+                                <span>MongoDB</span>
+                                <span>Express.js</span>
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>JWT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 - Autonomous Car -->
+                    <div class="project-card scroll-reveal fade-up" data-category="ai" data-project-id="2">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project2.png" alt="Autonomous Car Driving System" class="project-img">
+                            <div class="project-overlay">
+                                <span class="view-details-btn">View Case Study <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">AI / ML · In Progress 🚧</span>
+                            <h3 class="project-title">Autonomous Car Driving System</h3>
+                            <p class="project-summary">A real-world autonomous car using Raspberry Pi with ML models for lane detection, obstacle avoidance, and steering angle prediction via OpenCV.</p>
+                            <div class="project-tech">
+                                <span>Raspberry Pi</span>
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline / Experience Section -->
+        <section id="experience" class="experience-section section">
+            <div class="container">
+                <h2 class="section-title scroll-reveal fade-up">My Journey</h2>
+                
+                <div class="timeline">
+                    <!-- Timeline Item 1 - Current Education -->
+                    <div class="timeline-item scroll-reveal fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - 2027</div>
+                        <div class="timeline-content">
+                            <h3>B.Tech — Computer Science &amp; Engineering</h3>
+                            <h4>Dr. A.P.J. Abdul Kalam Technical University, Kanpur</h4>
+                            <p>Currently pursuing B.Tech in CSE with a CGPA of 7.2. Studying core subjects including Data Structures &amp; Algorithms, OOPs, Operating Systems, DBMS, and Computer Networks. Actively building full-stack projects and competing in college-level coding competitions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 - Hospital Management Project -->
+                    <div class="timeline-item scroll-reveal fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>Hospital Management System — MERN Stack Project</h3>
+                            <h4>Personal / Academic Project</h4>
+                            <p>Built a complete full-stack Hospital Management System with role-based access control (Admin, Doctor, Patient), JWT authentication, RESTful APIs with Express.js &amp; Node.js, and a responsive React.js frontend with dynamic dashboards.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 - Class XII -->
+                    <div class="timeline-item scroll-reveal fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-content">
+                            <h3>Class XII — Intermediate (Science)</h3>
+                            <h4>Sarswati Vidya Mandir, Kasia, Uttar Pradesh · UP Board</h4>
+                            <p>Completed Class XII with 85.8% from UP Board. Developed a passion for mathematics and computer science, which laid the foundation for pursuing engineering and software development.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 - Autonomous Car -->
+                    <div class="timeline-item scroll-reveal fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025 — Present</div>
+                        <div class="timeline-content">
+                            <h3>Autonomous Car Driving System — In Progress 🚧</h3>
+                            <h4>Embedded Systems &amp; ML Research Project</h4>
+                            <p>Currently building a real-world autonomous car using Raspberry Pi as onboard controller, implementing ML models for real-time lane detection, obstacle avoidance, and steering angle prediction, integrated with OpenCV for live video processing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2 class="section-title scroll-reveal fade-up">Get in Touch</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-info scroll-reveal fade-left">
+                        <h3>Let's build something amazing together.</h3>
+                        <p>I'm actively looking for internship opportunities and full-time roles. Whether you have a project in mind, a collaboration idea, or just want to say hello — feel free to reach out!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-text">
+                                    <span>Email me</span>
+                                    <a href="mailto:sandeepsingh.tech27@gmail.com">sandeepsingh.tech27@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="detail-text">
+                                    <span>Call me</span>
+                                    <a href="tel:+919918272164">+91 99182 72164</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-text">
+                                    <span>Location</span>
+                                    <p>Kanpur, Uttar Pradesh, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="contact-socials">
+                            <a href="https://github.com/Sandeep405812" target="_blank" class="social-pill" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/sandeep-singh-289a10325/" target="_blank" class="social-pill" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper scroll-reveal fade-right">
+                        <div class="glass-card form-card">
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" required placeholder=" ">
+                                    <label for="name">Your Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required placeholder=" ">
+                                    <label for="email">Email Address</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block magnetic" id="submit-btn">
+                                    Send Message <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                                <div id="form-status" class="form-status"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Sandeep Singh. Crafted with passion &amp; vanilla CSS.</p>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Injected dynamically by script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
