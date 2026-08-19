@@ -286,6 +286,16 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: ["Raspberry Pi", "Python", "OpenCV", "Machine Learning", "GPIO"],
             live: "#",
             code: "https://github.com/Sandeep405812"
+        },
+        3: {
+            title: "Smart College ERP",
+            category: "ERP System · Full Stack Web App",
+            image: "assets/project3.png",
+            summary: "A comprehensive College ERP system managing students, faculty, attendance, exams, timetables, fees, and library — all in one unified platform.",
+            description: "Smart College ERP is a full-featured Enterprise Resource Planning system built for educational institutions. It includes modules for student enrollment & management, faculty assignments, daily attendance tracking with analytics, exam scheduling & result management, automated fee collection with payment gateway integration, timetable generation, and library management. Built with role-based access control for Admin, Faculty, and Student roles with JWT-secured APIs and a fully responsive React.js frontend with dynamic dashboards.",
+            tech: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "REST API"],
+            live: "#",
+            code: "https://github.com/Sandeep405812"
         }
     };
 
