@@ -1,6 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     /* ==========================================================================
+       VISITOR COUNTER (Live Count via countapi.xyz)
+       ========================================================================== */
+    const visitorCountEl = document.getElementById('visitor-count');
+    if (visitorCountEl) {
+        fetch('https://api.countapi.xyz/hit/sandeep405812-portfollio/visits')
+            .then(res => res.json())
+            .then(data => {
+                // Animate number count up
+                const target = data.value;
+                let current = Math.max(0, target - 30);
+                const duration = 1500;
+                const step = (target - current) / (duration / 16);
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    visitorCountEl.textContent = Math.floor(current).toLocaleString();
+                }, 16);
+            })
+            .catch(() => {
+                // Fallback: use localStorage to count locally
+                let count = parseInt(localStorage.getItem('portfolio_visits') || '0') + 1;
+                localStorage.setItem('portfolio_visits', count);
+                visitorCountEl.textContent = count.toLocaleString();
+            });
+    }
+
+    /* ==========================================================================
        CUSTOM CURSOR
        ========================================================================== */
     const cursorDot = document.getElementById('cursor-dot');
