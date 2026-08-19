@@ -136,13 +136,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.05,
+        rootMargin: '0px 0px 0px 0px'
     });
 
     revealElements.forEach(el => {
         revealObserver.observe(el);
     });
+
+    // Also force-reveal any project cards already in viewport on load
+    setTimeout(() => {
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('active');
+            }
+        });
+    }, 300);
 
 
     /* ==========================================================================
