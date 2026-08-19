@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
             summary: "A full-stack MERN application for managing patient registration, doctor appointments, medical records, and billing with role-based access control.",
             description: "Built a complete Hospital Management System using the MERN stack to manage patient registration, doctor appointments, medical records, and billing in real time. Implemented role-based access control (Admin, Doctor, Patient) with JWT authentication and protected React routes. Designed RESTful APIs with Express.js and Node.js, integrating MongoDB for scalable and persistent data storage. Created a responsive React.js frontend with dynamic dashboards, appointment booking, and medical history views.",
             tech: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "REST API"],
-            live: "#",
+            live: "https://hospital-management-roan-iota.vercel.app/login",
             code: "https://github.com/Sandeep405812"
         },
         2: {
